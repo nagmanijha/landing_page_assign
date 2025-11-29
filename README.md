@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+TaskFlow Landing Page
 
-## Getting Started
+A responsive, high-performance landing page for TaskFlow, a hypothetical project management SaaS. This project was built to demonstrate modern frontend development practices using Next.js, Tailwind CSS, and AI-assisted UI generation via Vercel v0.
 
-First, run the development server:
+🚀 Live Demo
 
-```bash
+[Insert your Vercel Deployment Link Here]
+
+🛠️ Tech Stack
+
+Framework: Next.js (App Router)
+
+Styling: Tailwind CSS
+
+Icons: Lucide React
+
+UI Generation: Vercel v0
+
+Language: TypeScript
+
+📂 Project Structure
+
+/
+├── app/
+│   ├── layout.tsx       # Root layout with font configuration
+│   └── page.tsx         # Main landing page assembling all sections
+├── components/
+│   ├── Navbar.tsx       # Responsive navigation
+│   ├── Hero.tsx         # Hero section with mock dashboard
+│   ├── Features.tsx     # Feature grid
+│   ├── Testimonials.tsx # v0 Generated Component
+│   ├── Pricing.tsx      # v0 Generated Component
+│   └── Footer.tsx       # Site footer
+└── styles/
+    └── globals.css      # Tailwind directives
+
+
+🤖 Vercel v0 Usage Notes
+
+Evaluation Requirement:
+The following components were generated using Vercel v0 to accelerate the development of complex UI patterns:
+
+Testimonials Section: I used v0 to generate a clean, card-based grid layout for customer reviews. The prompt focused on "minimalist testimonial cards with star ratings and user avatars in a responsive grid."
+
+Pricing Section: The pricing table was generated via v0. I specifically requested a "3-column pricing table with a highlighted 'Pro' tier," leveraging v0's ability to quickly structure complex lists and tiered visual hierarchy.
+
+UI Primitives: The base styles for the Button and Badge components follow patterns often output by v0/shadcn-ui for consistency.
+
+🏃‍♂️ Getting Started
+
+Clone the repository:
+
+git clone [https://github.com/yourusername/taskflow-landing.git](https://github.com/yourusername/taskflow-landing.git)
+cd taskflow-landing
+
+
+Install dependencies:
+
+npm install
+# or
+yarn install
+
+
+Run the development server:
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Open http://localhost:3000 with your browser to see the result.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+📦 Deployment
 
-## Learn More
+This project is optimized for deployment on Vercel.
 
-To learn more about Next.js, take a look at the following resources:
+Push your code to a GitHub repository.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Import the project into Vercel.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
